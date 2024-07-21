@@ -118,5 +118,6 @@ https://github.com/user-attachments/assets/72dbdfd1-7dd6-439f-8ccf-0889ba047dc3
   - Işık ayarları yapılmalı.
   - Unity testler için daha çok zaman ayrılmalı.
 
-
+-**Diğer Notlar**:
+- N/A
 
