@@ -51,13 +51,13 @@ https://www.notion.so/5cf5ed05421947f2a33c9818922849ee?v=094d297548a24c9983cf801
 
 - **Sprint board update**:
 - 29.06.2024
-- ![image](https://github.com/hilalsinem/UnityBootcamp_Group93/assets/105792929/7a456ee5-e210-49b8-b211-9c3fe89a7a3d)
+- ![1 photo](https://github.com/user-attachments/assets/686c0984-d58e-4945-9ddb-84d14a192e1a)
 - 02.07.2024
--![image](https://github.com/hilalsinem/UnityBootcamp_Group93/assets/105792929/5ea806da-8c04-4dc5-babb-963a52ec9bb7)
+- ![2 photo](https://github.com/user-attachments/assets/23acdada-7f43-44bb-a1b3-3b89b127b1ae)
 - 06.07.2024
-- ![image](https://github.com/hilalsinem/UnityBootcamp_Group93/assets/105792929/57403f8f-2b87-4bd3-8c42-66f14c375037)
+- ![3 photo](https://github.com/user-attachments/assets/dedf4dc3-3d9b-4c08-b454-96c8b704c933)
 
-  
+
 - **Ürün Durumu**:
 - Oyun giriş ekranı ve kullanıcıya yardımcı seçenekler
 ![image](https://github.com/hilalsinem/UnityBootcamp_Group93/assets/105792929/8829db42-4423-4dcd-8991-45d03f6184bc)
