@@ -99,10 +99,10 @@ https://www.notion.so/5cf5ed05421947f2a33c9818922849ee?v=094d297548a24c9983cf801
 - 10.07.2024
 ![image](https://github.com/user-attachments/assets/0b257911-8ffc-412a-a8db-697395674998)
 
--16.07.2024
+- 16.07.2024
 ![image](https://github.com/user-attachments/assets/5a721594-d498-4ab5-a616-93141c521f7f)
 
-20.07.2024
+- 20.07.2024
 ![image](https://github.com/user-attachments/assets/335e8346-e8a5-45f9-bc40-af1fd39ce53c)
 
 - **Ürün Durumu**:
