@@ -69,7 +69,8 @@ https://www.notion.so/5cf5ed05421947f2a33c9818922849ee?v=094d297548a24c9983cf801
 ![image](https://github.com/user-attachments/assets/86a49505-7514-4b28-81d1-ca77dcd6fd41)
 
 
-- **Sprint Review**: 
+- **Sprint Review**:
+  - Toplanan Puan: 50
 
 - **Sprint Retrospective:**
   - Proje dokümantasyonu güncellenmeli ve genişletilmeli. Özellikle yeni geliştirilen özellikler ve önemli değişiklikler dokümante edilmeli.
@@ -112,6 +113,9 @@ https://www.notion.so/5cf5ed05421947f2a33c9818922849ee?v=094d297548a24c9983cf801
 - Oyun mekaniği
 https://github.com/user-attachments/assets/72dbdfd1-7dd6-439f-8ccf-0889ba047dc3
 
+- **Sprint Review**:
+  - Toplanan Puan: 185
+    
 - **Sprint Retrospective**:
   - Kullanıcı arayüzü geliştirilmeli.
   - Oyun mekaniğinde ince ayarlamalar (hız vb.) yapılmalı.
