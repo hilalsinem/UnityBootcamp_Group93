@@ -83,5 +83,28 @@ https://www.notion.so/5cf5ed05421947f2a33c9818922849ee?v=094d297548a24c9983cf801
 - N/A
 
 # Sprint 2
+- **Sprint Notları**: User Story'ler product backlog'ların içine yazılmıştır. Product backlog item'lara tıklandığında hikayelerin detayları okunabilir.
+
+- **Sprint içinde tamamlanması tahmin edilen puan**: 150 Puan
+
+- **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 300 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde ilk sprint'in en azından 100 ile başlaması gerektiğine karar verildi.
+
+- **Backlog düzeni ve Story seçimleri**:
+
+- Story'ler yapılacak işlere (task'lere) bölünmüştür. Notion'da gözüken kırmızı kalpler yapılacak işleri (task) gösterirken, mavi kalpler story'leri temsil etmektedir.
+
+- **Daily Scrum**: Daily Scrum toplantıları Google Meet üzerinden yapılmıştır.
+
+- **Sprint board update**:
+- 10.07.2024
+![image](https://github.com/user-attachments/assets/0b257911-8ffc-412a-a8db-697395674998)
+
+-16.07.2024
+![image](https://github.com/user-attachments/assets/5a721594-d498-4ab5-a616-93141c521f7f)
+
+20.07.2024
+![image](https://github.com/user-attachments/assets/335e8346-e8a5-45f9-bc40-af1fd39ce53c)
+
+
 
 
