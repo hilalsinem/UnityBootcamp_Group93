@@ -105,6 +105,13 @@ https://www.notion.so/5cf5ed05421947f2a33c9818922849ee?v=094d297548a24c9983cf801
 20.07.2024
 ![image](https://github.com/user-attachments/assets/335e8346-e8a5-45f9-bc40-af1fd39ce53c)
 
+- **Ürün Durumu**:
+- Oyunun kullanıcı arayüzü görünümü
+![image](https://github.com/user-attachments/assets/b5b8fd57-79c8-4a2a-b810-432a4379ba7c)
+
+- Oyun mekaniği
+https://github.com/user-attachments/assets/72dbdfd1-7dd6-439f-8ccf-0889ba047dc3
+
 
 
 
