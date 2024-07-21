@@ -82,3 +82,6 @@ https://www.notion.so/5cf5ed05421947f2a33c9818922849ee?v=094d297548a24c9983cf801
 -**Diğer Notlar**:
 - N/A
 
+# Sprint 2
+
+
