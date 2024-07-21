@@ -60,14 +60,13 @@ https://www.notion.so/5cf5ed05421947f2a33c9818922849ee?v=094d297548a24c9983cf801
 
 - **Ürün Durumu**:
 - Oyun giriş ekranı ve kullanıcıya yardımcı seçenekler
-![image](https://github.com/hilalsinem/UnityBootcamp_Group93/assets/105792929/8829db42-4423-4dcd-8991-45d03f6184bc)
+![image](https://github.com/user-attachments/assets/f738636e-2968-4510-8673-be696c06e238)
 - Help Sayfası
-- ![image](https://github.com/hilalsinem/UnityBootcamp_Group93/assets/105792929/95c50c0a-4e8a-4d06-8c1b-b970f548fc27)
+![image](https://github.com/user-attachments/assets/f24cd197-973a-46eb-93fa-e9941f6f5f43)
 - Contact Us Sayfası
-- ![image](https://github.com/hilalsinem/UnityBootcamp_Group93/assets/105792929/ef0a9ef2-2e90-457c-8747-82be887df17c)
+![image](https://github.com/user-attachments/assets/81c781dc-da0e-4dcc-a531-07be3165f8d7)
 - FAQ sayfası
-- ![image](https://github.com/hilalsinem/UnityBootcamp_Group93/assets/105792929/cb1f8a64-ee59-4e7d-aede-9ea255b49964)
-
+![image](https://github.com/user-attachments/assets/86a49505-7514-4b28-81d1-ca77dcd6fd41)
 
 
 - **Sprint Review**: 
