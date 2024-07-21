@@ -112,6 +112,12 @@ https://www.notion.so/5cf5ed05421947f2a33c9818922849ee?v=094d297548a24c9983cf801
 - Oyun mekaniği
 https://github.com/user-attachments/assets/72dbdfd1-7dd6-439f-8ccf-0889ba047dc3
 
+- **Sprint Retrospective**:
+
+- Kullanıcı arayüzü geliştirilmeli.
+- Oyun mekaniğinde ince ayarlamalar (hız vb.) yapılmalı.
+- Işık ayarları yapılmalı.
+- Unity testler için daha çok zaman ayrılmalı.
 
 
 
