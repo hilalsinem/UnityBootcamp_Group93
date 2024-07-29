@@ -15,10 +15,10 @@ ECOJOURNEY
 
 # Ürün Açıklaması
 
-Bu oyun, deniz ve kara taşımacılığının çevreye verdiği zararları vurgulayan bir oyundur. Oyuncular, gerçek hayatta olduğu gibi kimyasal madde veya kargo taşımacılığı yaparken çevreye zarar verirler. Hangi taşıma yöntemini seçerlerse seçsinler, çevreye verdikleri zararın önüne geçilemeyeceği mesajı verilir. 
+Bu oyun, kara taşımacılığının çevreye verdiği zararları vurgulayan bir oyundur. Oyuncular, gerçek hayatta olduğu gibi kimyasal madde veya kargo taşımacılığı yaparken çevreye zarar verirler. Hangi taşıma yöntemini seçerlerse seçsinler, çevreye verdikleri zararın önüne geçilemeyeceği mesajı verilir. 
 
 ## Ürün Özellikleri
-- Deniz ve kara taşımacılığı seçenekleri
+- Kara taşımacılığı simülasyonu
 - Gerçekçi çevre zararları ve etkileri
 - Dünyaya verilen zararın ve varış noktasına kalan mesafenin gösterildiği bilgi ekranı
 - Çevresel kirlilik, doğa habitat tahribatı gibi dünya sorunlarının simülasyonu
@@ -30,7 +30,7 @@ Bu oyun, deniz ve kara taşımacılığının çevreye verdiği zararları vurgu
 - Eğitim kurumları ve çevre örgütleri
 
 ### Sosyal Sorumluluk Mesajı
-İnsanlar olarak keyfimiz için ne zaman bir ürün ithal etsek dünyamıza farklı yollarla zarar veriyoruz. Gemi yolculuğu ile gelirken farklı zararlar, kara yolculuğu ile gelirken farklı zararlar oluşur. Bunu engellemek için tüketiciler olarak bilinçlenmeli ve yerel üretimi desteklemeliyiz.
+İnsanlar olarak keyfimiz için ne zaman bir ürün ithal etsek dünyamıza farklı yollarla zarar veriyoruz. Bunu engellemek için tüketiciler olarak bilinçlenmeli ve yerel üretimi desteklemeliyiz.
 
 ## Product Backlog URL
 Product Backlog URL:
