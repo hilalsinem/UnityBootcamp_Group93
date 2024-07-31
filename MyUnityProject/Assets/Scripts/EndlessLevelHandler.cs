@@ -13,7 +13,7 @@ public class EndlessLevelHandler: MonoBehaviour
 
     WaitForSeconds waitFor100ms = new WaitForSeconds(0.1f);
 
-    const float sectionLength = 26;
+    const float sectionLength = 52;
 
     // Start is called before the first frame update
     void Start()
