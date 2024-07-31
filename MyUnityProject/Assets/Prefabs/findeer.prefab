@@ -43,7 +43,6 @@ GameObject:
   - component: {fileID: 2917565223198973281}
   - component: {fileID: 1959923576150342807}
   - component: {fileID: 1300736990310782478}
-  - component: {fileID: 4421930340572360093}
   m_Layer: 7
   m_Name: findeer
   m_TagString: Geyik
@@ -76,9 +75,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 697069322962160058}
   serializedVersion: 4
-  m_Mass: 0.1
-  m_Drag: 0
-  m_AngularDrag: 0
+  m_Mass: 50
+  m_Drag: 0.5
+  m_AngularDrag: 0.08
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -87,14 +86,14 @@ Rigidbody:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_Constraints: 0
-  m_CollisionDetection: 1
+  m_CollisionDetection: 3
 --- !u!136 &1300736990310782478
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -108,7 +107,7 @@ CapsuleCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -118,27 +117,6 @@ CapsuleCollider:
   m_Height: 1.2655128
   m_Direction: 0
   m_Center: {x: 0.065635145, y: 0.8194816, z: -0.009881226}
---- !u!65 &4421930340572360093
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 697069322962160058}
-  m_Material: {fileID: 13400000, guid: 35bd53b5d9ff9844ba2280591184f96d, type: 2}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.8320709, y: 0.0622959, z: 0.24592078}
-  m_Center: {x: -0.039772715, y: 0.042321984, z: 0.0059221736}
 --- !u!1 &999833891481789525
 GameObject:
   m_ObjectHideFlags: 0

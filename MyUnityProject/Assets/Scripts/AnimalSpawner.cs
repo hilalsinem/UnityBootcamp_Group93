@@ -16,12 +16,10 @@ public class AnimalSpawner : MonoBehaviour
     public float maxCrossInterval = 7f; // Maximum crossing interval
 
     private List<GameObject> activeAnimals; // List of active animals
-    private Queue<GameObject> animalPool; // Pool of inactive animals
 
     void Start()
     {
         activeAnimals = new List<GameObject>();
-        animalPool = new Queue<GameObject>();
         StartCoroutine(SpawnAnimals());
     }
 
@@ -32,9 +30,7 @@ public class AnimalSpawner : MonoBehaviour
         {
             if (activeAnimals[i].transform.position.z < player.position.z - despawnDistance)
             {
-                // Deactivate and pool the animal instead of destroying it
-                activeAnimals[i].SetActive(false);
-                animalPool.Enqueue(activeAnimals[i]);
+                Destroy(activeAnimals[i]);
                 activeAnimals.RemoveAt(i);
             }
         }
@@ -55,19 +51,7 @@ public class AnimalSpawner : MonoBehaviour
     private void SpawnAnimal()
     {
         Vector3 spawnPosition = new Vector3(Random.Range(spawnRangeMin.x, spawnRangeMax.x), 0, Random.Range(spawnRangeMin.z, spawnRangeMax.z) + player.position.z);
-        GameObject animal;
-
-        // Get an animal from the pool if available, otherwise create a new one
-        if (animalPool.Count > 0)
-        {
-            animal = animalPool.Dequeue();
-            animal.transform.position = spawnPosition;
-            animal.SetActive(true);
-        }
-        else
-        {
-            animal = Instantiate(animalPrefab, spawnPosition, Quaternion.identity);
-        }
+        GameObject animal = Instantiate(animalPrefab, spawnPosition, Quaternion.identity);
 
         activeAnimals.Add(animal);
 
@@ -77,7 +61,7 @@ public class AnimalSpawner : MonoBehaviour
 
     IEnumerator AnimalCrossing(GameObject animal)
     {
-        while (animal.activeSelf)
+        while (animal != null && animal.activeSelf)
         {
             yield return new WaitForSeconds(Random.Range(minCrossInterval, maxCrossInterval)); // Wait for a random duration
 
@@ -114,11 +98,11 @@ public class AnimalSpawner : MonoBehaviour
                 animal.transform.rotation = Quaternion.Euler(0, 0, 0);
             }
 
-            //while (Vector3.Distance(animal.transform.position, targetPosition) > 0.1f)
-            //{
-            //    animal.transform.position = Vector3.MoveTowards(animal.transform.position, targetPosition, Time.deltaTime * 5f);
-            //    yield return null;
-            //}
+            while (Vector3.Distance(animal.transform.position, targetPosition) > 0.1f)
+            {
+                animal.transform.position = Vector3.MoveTowards(animal.transform.position, targetPosition, Time.deltaTime * 5f);
+                yield return null;
+            }
         }
     }
 }
