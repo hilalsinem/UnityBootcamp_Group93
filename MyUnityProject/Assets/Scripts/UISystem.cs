@@ -46,10 +46,10 @@ public class UISystem : MonoBehaviour
         if (deltaZ > 0)
         {
             // Gidilen mesafeyi hesapla
-            distanceTraveled += deltaZ / 1000f; // Metreden km'ye çevir
+            distanceTraveled += deltaZ / 10f; // Metreden km'ye çevir
 
             // Varýþ noktasýna kalan mesafeyi güncelle
-            distanceToDestination -= deltaZ / 1000f;
+            distanceToDestination -= deltaZ / 10f;
             if (distanceToDestination < resetDistanceThreshold)
             {
                 distanceToDestination = Random.Range(minDistanceToDestination, maxDistanceToDestination);

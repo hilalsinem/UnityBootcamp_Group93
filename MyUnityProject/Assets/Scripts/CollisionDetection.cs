@@ -53,7 +53,7 @@ public class CollisionDetection : MonoBehaviour
         UISystem uiSystem = FindObjectOfType<UISystem>();
         if (uiSystem != null)
         {
-            uiSystem.UpdateWorldLife(-300000f); // 300,000 yýl eksilt
+            uiSystem.UpdateWorldLife(-3000000f); // 3,000,000 yýl eksilt
         }
     }
 
@@ -66,7 +66,7 @@ public class CollisionDetection : MonoBehaviour
         UISystem uiSystem = FindObjectOfType<UISystem>();
         if (uiSystem != null)
         {
-            uiSystem.UpdateWorldLife(-1000f); // 1,000 yýl eksilt
+            uiSystem.UpdateWorldLife(-100000f); // 1,00000 yýl eksilt
         }
     }
 
