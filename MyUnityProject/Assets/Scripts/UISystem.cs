@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
@@ -6,66 +6,75 @@ using TMPro;
 public class UISystem : MonoBehaviour
 {
     public Transform player; // Oyuncunun transformu
-    public TextMeshProUGUI distanceTraveledText; // Gidilen mesafeyi gösteren UI texti
-    public TextMeshProUGUI distanceToDestinationText; // Varış noktasına kalan mesafeyi gösteren UI texti
-    public TextMeshProUGUI worldRemainingLifeText; // Dünyanın kalan ömrünü gösteren UI texti
-    public float resetDistanceThreshold = 15f; // Kalan mesafe için sıfırlama eşiği
-    public float minDistanceToDestination = 50f; // Minimum varış mesafesi
-    public float maxDistanceToDestination = 100f; // Maksimum varış mesafesi
-    public float startingWorldLife = 5000000f; // Başlangıçta dünyanın ömrü (yıl cinsinden)
+    public TextMeshProUGUI distanceTraveledText; // Gidilen mesafeyi gÃ¶steren UI texti
+    public TextMeshProUGUI distanceToDestinationText; // VarÄ±ÅŸ noktasÄ±na kalan mesafeyi gÃ¶steren UI texti
+    public TextMeshProUGUI worldRemainingLifeText; // DÃ¼nyanÄ±n kalan Ã¶mrÃ¼nÃ¼ gÃ¶steren UI texti
+    public TextMeshProUGUI truckHealthText; // TÄ±rÄ±n kalan canÄ±nÄ± gÃ¶steren UI texti
+    public TextMeshProUGUI gameOverText; // Oyun bitiÅŸ mesajÄ±nÄ± gÃ¶steren UI texti
+    public float resetDistanceThreshold = 15f; // Kalan mesafe iÃ§in sÄ±fÄ±rlama eÅŸiÄŸi
+    public float minDistanceToDestination = 50f; // Minimum varÄ±ÅŸ mesafesi
+    public float maxDistanceToDestination = 100f; // Maksimum varÄ±ÅŸ mesafesi
+    public float startingWorldLife = 5000000f; // BaÅŸlangÄ±Ã§ta dÃ¼nyanÄ±n Ã¶mrÃ¼ (yÄ±l cinsinden)
+    public int maxCollisions = 5; // Maksimum Ã§arpma sayÄ±sÄ±
+    public int truckMaxHealth = 5; // TÄ±rÄ±n maksimum canÄ±
 
-    private float previousZ; // Oyuncunun önceki Z pozisyonu
+    private float previousZ; // Oyuncunun Ã¶nceki Z pozisyonu
     private float distanceTraveled; // Gidilen mesafe
-    private float distanceToDestination; // Varış noktasına kalan mesafe
-    private float worldRemainingLife; // Dünyanın kalan ömrü
+    private float distanceToDestination; // VarÄ±ÅŸ noktasÄ±na kalan mesafe
+    private float worldRemainingLife; // DÃ¼nyanÄ±n kalan Ã¶mrÃ¼
+    private int collisionCount = 0; // Ã‡arpma sayÄ±sÄ±
+    private int truckHealth; // TÄ±rÄ±n kalan canÄ±
 
     private void Start()
     {
-        // Oyuncunun başlangıç pozisyonunu al
+        // Oyuncunun baÅŸlangÄ±Ã§ pozisyonunu al
         previousZ = player.position.z;
 
-        // Dünyanın kalan ömrünü PlayerPrefs'den yükle
+        // DÃ¼nyanÄ±n kalan Ã¶mrÃ¼nÃ¼ PlayerPrefs'den yÃ¼kle
         worldRemainingLife = PlayerPrefs.GetFloat("WorldRemainingLife", startingWorldLife);
 
-        // İlk varış mesafesini belirle
+        // Ä°lk varÄ±ÅŸ mesafesini belirle
         distanceToDestination = Random.Range(minDistanceToDestination, maxDistanceToDestination);
+
+        // TÄ±rÄ±n baÅŸlangÄ±Ã§ canÄ±nÄ± ayarla
+        truckHealth = truckMaxHealth;
 
         UpdateUI();
     }
 
     private void Update()
     {
-        // R tuşuna basıldığında PlayerPrefs'i sıfırla
+        // R tuÅŸuna basÄ±ldÄ±ÄŸÄ±nda PlayerPrefs'i sÄ±fÄ±rla
         if (Input.GetKeyDown(KeyCode.R))
         {
             ResetPlayerPrefs();
         }
 
-        // Oyuncunun hareket edip etmediğini kontrol et
+        // Oyuncunun hareket edip etmediÄŸini kontrol et
         float deltaZ = player.position.z - previousZ;
         if (deltaZ > 0)
         {
             // Gidilen mesafeyi hesapla
-            distanceTraveled += deltaZ / 10f; // Metreden km'ye çevir
+            distanceTraveled += deltaZ / 10f; // Metreden km'ye Ã§evir
 
-            // Varış noktasına kalan mesafeyi güncelle
+            // VarÄ±ÅŸ noktasÄ±na kalan mesafeyi gÃ¼ncelle
             distanceToDestination -= deltaZ / 10f;
             if (distanceToDestination < resetDistanceThreshold)
             {
                 distanceToDestination = Random.Range(minDistanceToDestination, maxDistanceToDestination);
             }
 
-            // Dünyanın kalan ömrünü güncelle
-            worldRemainingLife -= deltaZ * 50f; // Her metre için 500.000 yıl eksilt
+            // DÃ¼nyanÄ±n kalan Ã¶mrÃ¼nÃ¼ gÃ¼ncelle
+            worldRemainingLife -= deltaZ * 50f; // Her metre iÃ§in 500.000 yÄ±l eksilt
 
-            // UI'yi güncelle
+            // UI'yi gÃ¼ncelle
             UpdateUI();
 
-            // PlayerPrefs'e dünyanın kalan ömrünü kaydet
+            // PlayerPrefs'e dÃ¼nyanÄ±n kalan Ã¶mrÃ¼nÃ¼ kaydet
             PlayerPrefs.SetFloat("WorldRemainingLife", worldRemainingLife);
             PlayerPrefs.Save();
 
-            // Önceki pozisyonu güncelle
+            // Ã–nceki pozisyonu gÃ¼ncelle
             previousZ = player.position.z;
         }
     }
@@ -75,29 +84,45 @@ public class UISystem : MonoBehaviour
         // PlayerPrefs'i temizle
         PlayerPrefs.DeleteAll();
 
-        // Dünyanın ömrünü başlangıç değerine ayarla
+        // DÃ¼nyanÄ±n Ã¶mrÃ¼nÃ¼ baÅŸlangÄ±Ã§ deÄŸerine ayarla
         PlayerPrefs.SetFloat("WorldRemainingLife", startingWorldLife);
         PlayerPrefs.Save();
 
-        // Dünyanın kalan ömrünü sıfırla ve UI'yi güncelle
+        // DÃ¼nyanÄ±n kalan Ã¶mrÃ¼nÃ¼ sÄ±fÄ±rla ve UI'yi gÃ¼ncelle
         worldRemainingLife = startingWorldLife;
+        collisionCount = 0;
+        truckHealth = truckMaxHealth;
         UpdateUI();
     }
+
     public void UpdateWorldLife(float delta)
     {
-        // Dünyanın kalan ömrünü güncelle
+        // DÃ¼nyanÄ±n kalan Ã¶mrÃ¼nÃ¼ gÃ¼ncelle
         worldRemainingLife += delta;
         PlayerPrefs.SetFloat("WorldRemainingLife", worldRemainingLife);
         PlayerPrefs.Save();
         UpdateUI();
     }
 
+    public void OnCollision()
+    {
+        // Ã‡arpma sayÄ±sÄ±nÄ± artÄ±r ve tÄ±rÄ±n canÄ±nÄ± azalt
+        collisionCount++;
+        truckHealth--;
+        if (collisionCount >= maxCollisions)
+        {
+            // Oyun bitiÅŸ mesajÄ±nÄ± gÃ¶ster
+            gameOverText.text = "Oyun Bitti!";
+            Time.timeScale = 0f; // Oyunu durdur
+        }
+        UpdateUI();
+    }
+
     private void UpdateUI()
     {
         distanceTraveledText.text = $"Gidilen Mesafe: {distanceTraveled:F2} km";
-        distanceToDestinationText.text = $"Varış Noktasına Kalan Mesafe: {distanceToDestination:F2} km";
-        worldRemainingLifeText.text = $"Dünyanın Kalan Ömrü: {worldRemainingLife:F0} yıl";
+        distanceToDestinationText.text = $"VarÄ±ÅŸ NoktasÄ±na Kalan Mesafe: {distanceToDestination:F2} km";
+        worldRemainingLifeText.text = $"DÃ¼nyanÄ±n Kalan Ã–mrÃ¼: {worldRemainingLife:F0} yÄ±l";
+        truckHealthText.text = $"TÄ±rÄ±n Kalan CanÄ±: {truckHealth} / {truckMaxHealth}";
     }
-
-   
 }
