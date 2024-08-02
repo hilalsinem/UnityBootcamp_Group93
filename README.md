@@ -88,7 +88,7 @@ https://www.notion.so/5cf5ed05421947f2a33c9818922849ee?v=094d297548a24c9983cf801
 
 - **Sprint içinde tamamlanması tahmin edilen puan**: 150 Puan
 
-- **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 300 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde ilk sprint'in en azından 100 ile başlaması gerektiğine karar verildi.
+- **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 300 puanlık backlog bulunmaktadır.
 
 - **Backlog düzeni ve Story seçimleri**:
 
@@ -124,4 +124,44 @@ https://github.com/user-attachments/assets/72dbdfd1-7dd6-439f-8ccf-0889ba047dc3
 
 -**Diğer Notlar**:
 - N/A
+
+# Sprint 3
+- **Sprint Notları**: User Story'ler product backlog'ların içine yazılmıştır. Product backlog item'lara tıklandığında hikayelerin detayları okunabilir.
+
+- **Sprint içinde tamamlanması tahmin edilen puan**: 65 Puan
+
+- **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 300 puanlık backlog bulunmaktadır.
+- **Backlog düzeni ve Story seçimleri**:
+
+- Story'ler yapılacak işlere (task'lere) bölünmüştür. Notion'da gözüken kırmızı kalpler yapılacak işleri (task) gösterirken, mavi kalpler story'leri temsil etmektedir.
+
+- **Daily Scrum**: Daily Scrum toplantıları Google Meet ve Zoom üzerinden yapılmıştır.
+
+- **Sprint board update**:
+- 23.07.2024
+![image](https://github.com/user-attachments/assets/4609a1b5-428b-440b-a60c-e3053d873cd8)
+
+- 26.07.2024
+![image](https://github.com/user-attachments/assets/9d734041-8318-4bda-b8ef-dd103a936bed)
+
+- 28.07.2024
+![image](https://github.com/user-attachments/assets/fbfdd603-d434-43a4-a6db-25b4ead60c83)
+
+- 02.07.2024
+![image](https://github.com/user-attachments/assets/d985083a-e230-4c78-bf7f-922aead26034)
+
+
+- **Ürün Durumu**:
+- Bu drive linki ile oyunun kısa bir videosunu izleyebilirsiniz.
+https://drive.google.com/file/d/1c6k2A4OvTez33W8BcW5B6gZpUvU2PooK/view?usp=sharing
+
+- **Sprint Review**:
+  - Toplanan Puan: 65
+
+-**Diğer Notlar**:
+Projemizi 3 ana bölümde tamamladık ve çalışma anlayışımız ve planımız şu şekilde ilerledi:
+- 1.sprint: En çok zamanı bir fikir bulmaya ve onu geliştirmeye harcadık. Birbirimizi tanıdık ve görsel bir prototip olması açısından temel bir oyun tasarımı yaptık.
+- 2.sprint: Bu aşamada oyunu bitirmeyi ve tamamen kullanıma hazır olmasını planladık. Birkaç ufak hata ve görsel yetersizliği görmezden geldik.
+- 3.sprint: Tamamen bitmiş oyunumuzun son hatalarını düzelttik. Mekaniklerini geliştirdik ve görsel açıdan daha ilgi çekici hale getirdik.
+Bu plana göre önce oyunumuzu bitirip daha sonra üstüne eklemeyi kararlaştırdık çünkü kısıtlı bir süremiz vardı ve asıl odaklanmamız gerekn şeyin bitmiş bir proje olması gerektiğine karar verdik. Detaylandırmayı ve geliştirmeyi sona bırakmak bize zaman kazandırdı ve daha rahat çalıştık.
 
