@@ -1,7 +1,10 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CollisionDetection : MonoBehaviour
 {
+    private int playerGeyikCollisionCount = 0;
+
     private void OnCollisionEnter(Collision collision)
     {
         GameObject other = collision.gameObject;
@@ -16,7 +19,7 @@ public class CollisionDetection : MonoBehaviour
                 HandleAnimalCollision();
                 break;
             case "Geyik":
-                HandleGeyikCollision();
+                HandleGeyikCollision(other);
                 break;
             case "NPCcar":
                 HandleNPCCarCollision();
@@ -57,7 +60,7 @@ public class CollisionDetection : MonoBehaviour
         }
     }
 
-    private void HandleGeyikCollision()
+    private void HandleGeyikCollision(GameObject player)
     {
         // Geyik ile çarpýþma iþlemleri
         Debug.Log("Geyik ile çarpýþma");
@@ -67,6 +70,15 @@ public class CollisionDetection : MonoBehaviour
         if (uiSystem != null)
         {
             uiSystem.UpdateWorldLife(-100000f); // 1,00000 yýl eksilt
+        }
+
+        // Player Geyik ile çarpýþma sayýsýný artýr
+        playerGeyikCollisionCount++;
+
+        // Eðer player toplamda 3 kez Geyik ile çarpýþtýysa
+        if (playerGeyikCollisionCount >= 3)
+        {
+            GameOver();
         }
     }
 
@@ -94,5 +106,11 @@ public class CollisionDetection : MonoBehaviour
         {
             uiSystem.UpdateWorldLife(-300f); // 300 yýl eksilt
         }
+    }
+
+    private void GameOver()
+    {
+        // Game Over sahnesini yükle
+        SceneManager.LoadScene("StartScene");
     }
 }
