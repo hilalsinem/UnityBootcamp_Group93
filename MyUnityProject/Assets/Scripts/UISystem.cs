@@ -95,8 +95,8 @@ public class UISystem : MonoBehaviour
     private void UpdateUI()
     {
         distanceTraveledText.text = $"Gidilen Mesafe: {distanceTraveled:F2} km";
-        distanceToDestinationText.text = $"Varýþ Noktasýna Kalan Mesafe: {distanceToDestination:F2} km";
-        worldRemainingLifeText.text = $"Dünyanýn Kalan Ömrü: {worldRemainingLife:F0} yýl";
+        distanceToDestinationText.text = $"Varış Noktasına Kalan Mesafe: {distanceToDestination:F2} km";
+        worldRemainingLifeText.text = $"Dünyanın Kalan Ömrü: {worldRemainingLife:F0} yıl";
     }
 
 
