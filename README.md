@@ -152,6 +152,11 @@ https://github.com/user-attachments/assets/72dbdfd1-7dd6-439f-8ccf-0889ba047dc3
 
 
 - **Ürün Durumu**:
+- Oyun görselleri ve farklı biyomlar:
+![image](https://github.com/user-attachments/assets/379b1322-48bd-4214-b1c6-726837d406cd)
+![image](https://github.com/user-attachments/assets/6a7e530f-7273-4484-a8e1-9bfa4c4eae3a)
+![image](https://github.com/user-attachments/assets/0fecaa0a-a3a0-4b07-a4de-db32a7975ef0)
+
 - Bu drive linki ile oyunun kısa bir videosunu izleyebilirsiniz.
 https://drive.google.com/file/d/1c6k2A4OvTez33W8BcW5B6gZpUvU2PooK/view?usp=sharing
 
@@ -163,5 +168,5 @@ Projemizi 3 ana bölümde tamamladık ve çalışma anlayışımız ve planımı
 - 1.sprint: En çok zamanı bir fikir bulmaya ve onu geliştirmeye harcadık. Birbirimizi tanıdık ve görsel bir prototip olması açısından temel bir oyun tasarımı yaptık.
 - 2.sprint: Bu aşamada oyunu bitirmeyi ve tamamen kullanıma hazır olmasını planladık. Birkaç ufak hata ve görsel yetersizliği görmezden geldik.
 - 3.sprint: Tamamen bitmiş oyunumuzun son hatalarını düzelttik. Mekaniklerini geliştirdik ve görsel açıdan daha ilgi çekici hale getirdik.
-Bu plana göre önce oyunumuzu bitirip daha sonra üstüne eklemeyi kararlaştırdık çünkü kısıtlı bir süremiz vardı ve asıl odaklanmamız gerekn şeyin bitmiş bir proje olması gerektiğine karar verdik. Detaylandırmayı ve geliştirmeyi sona bırakmak bize zaman kazandırdı ve daha rahat çalıştık.
+Bu plana göre önce oyunumuzu bitirip daha sonra üstüne eklemeyi kararlaştırdık çünkü kısıtlı bir süremiz vardı ve asıl odaklanmamız gereken şeyin bitmiş bir proje olması gerektiğine karar verdik. Detaylandırmayı ve geliştirmeyi sona bırakmak bize zaman kazandırdı ve daha rahat çalıştık.
 
